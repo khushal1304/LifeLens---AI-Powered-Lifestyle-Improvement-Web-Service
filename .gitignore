@@ -10,10 +10,6 @@
 /build/
 /target/
 
-# === WAR/JAR Archives ===
-*.war
-*.jar
-
 #####################
 # 🔧 Eclipse Specific
 #####################
