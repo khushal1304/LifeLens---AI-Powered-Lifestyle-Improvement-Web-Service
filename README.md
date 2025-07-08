@@ -1,1 +1,0 @@
-# LifeLens---AI-Powered-Lifestyle-Improvement-Web-Service
