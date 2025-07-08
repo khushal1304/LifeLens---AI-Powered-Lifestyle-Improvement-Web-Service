@@ -231,7 +231,8 @@
       </div>
     </div>
   </nav>
-
+  
+  /* type select */
   <div class="container">
     <h1>Select Your Survey Type</h1>
 
