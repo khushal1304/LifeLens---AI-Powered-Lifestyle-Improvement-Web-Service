@@ -339,11 +339,10 @@ h2 {
             <p class="subtitle">Your Personal Health Companion</p>
         </div>
 
-        <a class="google-btn"
-           href="https://accounts.google.com/o/oauth2/v2/auth?scope=openid%20email%20profile&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2FLifeLens%2FGoogleOAuthServlet&response_type=code&client_id=193964380377-4325skno0dmpg1ka3bpq09se8j8ig5pm.apps.googleusercontent.com&access_type=offline">
-            <div class="google-icon"></div>
-            Continue with Google
-        </a>
+<a class="google-btn" 
+   href="https://accounts.google.com/o/oauth2/v2/auth?scope=openid%20email%20profile&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2FLifeLens%2FGoogleOAuthServlet&response_type=code&client_id=978798924564-m1usak4i8va672m463qa1qe6ru8vvitc.apps.googleusercontent.com&access_type=offline">
+   Login with Google
+</a>
 
         <div class="note">
             <span class="security-icon">🔒</span>
