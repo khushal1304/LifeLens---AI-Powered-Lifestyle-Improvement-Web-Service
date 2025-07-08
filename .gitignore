@@ -1,0 +1,59 @@
+#####################
+# 🌐 Java Web Project (Eclipse + Servlet/JSP)
+#####################
+
+# === Compiled class files ===
+*.class
+
+# === Output folders (Eclipse) ===
+/bin/
+/build/
+/target/
+
+# === WAR/JAR Archives ===
+*.war
+*.jar
+
+#####################
+# 🔧 Eclipse Specific
+#####################
+
+*.classpath
+*.project
+.settings/
+.metadata/
+wtpwebapps/
+
+#####################
+# 🔐 Secret Config (IMPORTANT)
+#####################
+
+# Prevent Google OAuth credentials from being pushed
+/src/main/webapp/WEB-INF/config.properties
+
+#####################
+# 💻 OS Specific files
+#####################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+#####################
+# 🚫 Logs & Errors
+#####################
+
+*.log
+hs_err_pid*
+
+#####################
+# 💣 Backup/Temp Files
+#####################
+
+*.bak
+*.tmp
+*.swp
+*~
