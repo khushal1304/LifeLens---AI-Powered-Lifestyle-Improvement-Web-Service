@@ -584,16 +584,16 @@
 
         <!-- Call to Action -->
         <div class="cta-section">
-            <a href="Entry.html" class="back-button">
+            <a href="SelectSurveyLoggedIN.jsp" class="back-button">
                 <span>🏠</span>
-                Start Your Health Journey
+                Start Your Survey
             </a>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 LifeLens. Designed with ❤️ to make health simple and accessible for everyone.</p>
+        <p>&copy; 2025 LifeLens. Designed with ❤ to make health simple and accessible for everyone.</p>
     </footer>
 
     <script>
@@ -601,15 +601,18 @@
             const faqItem = element.parentElement;
             const isActive = faqItem.classList.contains('active');
             
+            // Close all FAQ items
             document.querySelectorAll('.faq-item').forEach(item => {
                 item.classList.remove('active');
             });
             
+            // If this item wasn't active, open it
             if (!isActive) {
                 faqItem.classList.add('active');
             }
         }
 
+        // Add scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -624,6 +627,7 @@
             });
         }, observerOptions);
 
+        // Observe elements for animation
         document.querySelectorAll('.feature-card, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
@@ -631,6 +635,7 @@
             observer.observe(el);
         });
 
+        // Add smooth scrolling for better UX
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
