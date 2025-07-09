@@ -544,7 +544,7 @@
       <ul>
         <li><a href="Entry.html">Home</a></li>
         <li><a href="#">Survey</a></li>
-        <li><a href="help.jsp">Help</a></li>
+        <li><a href="helpLoggedIN.jsp">Help</a></li>
         <li><a href="about.jsp">About</a></li>
       </ul>
     </div>
