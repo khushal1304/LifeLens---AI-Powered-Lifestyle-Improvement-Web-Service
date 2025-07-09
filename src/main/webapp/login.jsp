@@ -27,7 +27,6 @@ body {
     50% { background-position: 100% 50%; }
 }
 
-/* Animated background particles */
 .particles {
     position: absolute;
     top: 0;
@@ -68,7 +67,6 @@ body {
     }
 }
 
-/* Main container */
 .main-container {
     display: flex;
     justify-content: center;
@@ -106,7 +104,6 @@ body {
     }
 }
 
-/* Glowing border effect */
 .login-container::before {
     content: '';
     position: absolute;
@@ -130,7 +127,6 @@ body {
     50% { background-position: 100% 50%; }
 }
 
-/* Header styling */
 .header {
     margin-bottom: 30px;
     animation: headerFadeIn 1.2s ease-out 0.3s both;
@@ -176,7 +172,6 @@ h2 {
     opacity: 0.9;
 }
 
-/* Google button styling */
 .google-btn {
     display: inline-flex;
     align-items: center;
@@ -279,7 +274,6 @@ h2 {
     animation: pulse 2s ease-in-out infinite;
 }
 
-/* Responsive design */
 @media (max-width: 480px) {
     .login-container {
         padding: 40px 30px;
@@ -296,7 +290,6 @@ h2 {
     }
 }
 
-/* Additional visual enhancements */
 .feature-highlight {
     position: absolute;
     top: -50px;
