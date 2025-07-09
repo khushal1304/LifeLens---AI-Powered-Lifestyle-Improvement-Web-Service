@@ -544,8 +544,10 @@
       <ul>
         <li><a href="Entry.html">Home</a></li>
         <li><a href="#">Survey</a></li>
+
         <li><a href="help.jsp">Help</a></li>
-        <li><a href="about.jsp">About</a></li>
+        <li><a href="aboutLoggedIN.jsp">About</a></li>
+
       </ul>
     </div>
     <div class="nav-right">
@@ -633,7 +635,6 @@
   </div>
 
   <script>
-    // Create floating particles
     function createParticles() {
       const container = document.querySelector('.bg-particles');
       const particleCount = 50;
@@ -642,11 +643,9 @@
         const particle = document.createElement('div');
         particle.className = 'particle';
         
-        // Random position
         particle.style.left = Math.random() * 100 + '%';
         particle.style.top = Math.random() * 100 + '%';
         
-        // Random animation delay
         particle.style.animationDelay = Math.random() * 6 + 's';
         particle.style.animationDuration = (Math.random() * 3 + 4) + 's';
         
@@ -654,13 +653,11 @@
       }
     }
 
-    // Dropdown functionality
     function toggleDropdown() {
       const dropdown = document.getElementById("userDropdown");
       dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
     }
 
-    // Hide dropdown when clicking outside
     window.onclick = function(event) {
       if (!event.target.matches('.menu-button')) {
         const dropdown = document.getElementById("userDropdown");
@@ -670,7 +667,6 @@
       }
     }
 
-    // Add smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -680,7 +676,6 @@
       });
     });
 
-    // Add card interaction effects
     document.querySelectorAll('.card').forEach(card => {
       card.addEventListener('mouseenter', function() {
         this.style.transform = 'translateY(-5px) scale(1.02)';
@@ -691,10 +686,8 @@
       });
     });
 
-    // Initialize particles when page loads
     window.addEventListener('load', createParticles);
 
-    // Add scroll-based animations
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -100px 0px'
@@ -709,7 +702,6 @@
       });
     }, observerOptions);
 
-    // Observe elements for scroll animations
     document.querySelectorAll('.survey-column, .benefits, .stat-card').forEach(el => {
       observer.observe(el);
     });
