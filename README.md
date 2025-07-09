@@ -36,10 +36,14 @@ Modern lifestyles are full of stress, irregular routines, and poor habits. Peopl
 - JSP, Servlets (Java EE)
 - HTML, CSS, JavaScript
 
-**Backend:**
-- Python Flask API
-- Gemini 1.5 flash for generating suggestions
+## 🔗 Backend Overview
 
+The backend is built using **Flask + Gemini 1.5 Flash**, designed to generate lifestyle insights and symptom-based diagnostics using AI.  
+This code is maintained in the **`backend` branch** of this repository.
+
+Key Endpoints:
+- `/generate_suggestion`: Receives lifestyle data and returns AI-generated tips
+- `/analyze_symptoms`: Processes symptom input and returns a smart diagnosis
 **Deployment:**
 - Java app on **Render (Tomcat Server)**
 - Flask app on **Render (Python Service)**
