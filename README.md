@@ -1,80 +1,31 @@
-# 🩺 LifeLens – AI-Powered Lifestyle & Health Insight Web App
+# 🧠 LifeLens AI Flask Backend
 
-👉 **Live Demo**: https://lifelens-frontend-d.onrender.com
-
-LifeLens is a smart web application that uses **AI** to provide **personalized health and lifestyle suggestions**. Through intuitive surveys and smart diagnostics, users can understand potential lifestyle risks or get guidance based on their symptoms — all backed by AI analysis.
-
----
-
-## 🧠 Why We Built LifeLens
-
-Modern lifestyles are full of stress, irregular routines, and poor habits. People often:
-
-- Don’t realize their habits are hurting them.
-- Ignore early symptoms of health issues.
-- Lack access to immediate personalized guidance.
-
-🚀 **LifeLens bridges that gap** by analyzing user responses and delivering custom lifestyle tips or possible causes of their symptoms using **AI-based insights**.
+This is the Flask backend for the **LifeLens** project — a health advisory system powered by **Gemini 1.5 Flash**.  
+It receives lifestyle or symptom data via POST requests and returns AI-generated personalized insights in structured HTML format.
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-- 🔐 **Google Sign-In** for easy and secure access
-- 📋 **Two smart surveys**:
-  1. **Lifestyle Risk Assessment** – checks your daily habits and flags potential risks
-  2. **Symptom Diagnostic** – lets users describe health symptoms to get AI-based cause predictions
-- 🤖 **AI-generated personalized suggestions**
-- 🌙 Clean, dark-themed responsive UI
-- 🔄 Seamless integration of frontend (JSP/Servlets) with backend AI (Flask + GPT API)
-
----
-
-## 🛠️ Technologies Used
-
-**Frontend:**
-- JSP, Servlets (Java EE)
-- HTML, CSS, JavaScript
-
-**Backend:**
-- Python Flask API
-- Gemini 1.5 flash for generating suggestions
-
-**Deployment:**
-- Java app on **Render (Tomcat Server)**
-- Flask app on **Render (Python Service)**
+- 🌐 RESTful Flask API with two endpoints:
+  - `/generate_suggestion`: Lifestyle survey AI analysis
+  - `/analyze_symptoms`: Symptom-based diagnosis
+- 🤖 Powered by Gemini 1.5 Flash (Google Generative AI)
+- 🎨 Returns formatted HTML for direct JSP integration
+- ✅ Deployed via Render / local development supported
+- 🔒 Uses `.env` to manage Gemini API Key securely
 
 ---
 
-## 🧪 How It Works (Flow)
+## 📦 Requirements
 
-1. **User visits** `entry.html` → picks a survey
-2. **Signs in** with Google
-3. Fills the selected form:
-   - Lifestyle or
-   - Symptom survey
-4. Data is POSTed to the Flask backend
-5. GPT processes input → sends suggestions back
-6. Servlet displays suggestions on a styled JSP page
+- Python 3.8+
+- Flask
+- google-generativeai
+- python-dotenv
 
----
+Install via:
 
-## 🚀 Getting Started Locally
-
-### Prerequisites
-- Java 17+
-- Apache Tomcat 10+
-- Python 3.10+
-- Flask & OpenAI Python SDK
-- MySQL (optional for storing users)
-
-### Run Java App
-1. Import the project in Eclipse/IntelliJ
-2. Deploy it on your local Tomcat server
-3. Make sure `config.properties` contains your Google OAuth credentials
-
-### Run Flask App
 ```bash
-cd lifelens-backend
 pip install -r requirements.txt
-python app.py
+
