@@ -496,7 +496,6 @@
     </footer>
 
     <script>
-        // Add scroll animations
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -511,7 +510,6 @@
             });
         }, observerOptions);
 
-        // Observe elements for animation
         document.querySelectorAll('.about-card, .team-showcase, .contact-section').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
@@ -519,7 +517,6 @@
             observer.observe(el);
         });
 
-        // Add smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -532,7 +529,6 @@
             });
         });
 
-        // Add dynamic particle movement on mouse move
         document.addEventListener('mousemove', (e) => {
             const particles = document.querySelectorAll('.particle');
             const mouseX = e.clientX / window.innerWidth;
